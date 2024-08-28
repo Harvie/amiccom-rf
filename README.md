@@ -1,4 +1,4 @@
-# Amiccom A7129 Library
+# Amiccom A7xxx Driver Library
 
 This is library to support Amiccom A7129 FSK/GFSK Sub 1GHz Transceiver IC
 on Arduino, Mongoose OS and Espressif ESP-IDF
