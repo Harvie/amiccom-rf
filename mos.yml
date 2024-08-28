@@ -1,0 +1,27 @@
+author: harvie
+description: Amiccom RF Chip Library
+type: lib
+version: 0.1
+
+platforms: [ esp32, esp8266 ]
+
+sources:
+  - src
+includes:
+  - src
+
+config_schema:
+  - ["amiccom_rf", "o", {title: "Amiccom RF IC Config"}]
+  - ["amiccom_rf.chip", "i", 7129, {title: "Model of Amiccom RF IC"}]
+  - ["amiccom_rf.pin", "o", {title: "Amiccom RF IC Pin mapping"}]
+  - ["amiccom_rf.pin.sdio", "i", 14, {title: "GPIO no. of pin SDIO"}]
+  - ["amiccom_rf.pin.sck",  "i", 15, {title: "GPIO no. of pin SCK"}]
+  - ["amiccom_rf.pin.scs",  "i", 12, {title: "GPIO no. of pin SCS"}]
+  - ["amiccom_rf.pin.gio1", "i", 13, {title: "GPIO no. of pin GIO1"}]
+
+tags:
+  - rf
+  - amiccom
+  - a7129
+
+manifest_version: 2019-07-28
