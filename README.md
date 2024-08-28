@@ -37,6 +37,10 @@ In case of need you can use sigrok/pulseview https://sigrok.org/ with following 
 
 ![alt text](A7129-pulseview.png "title text")
 
+## Notes
+
+At least some of the amiccom chips seem to have buggy hardware implementation of CRC, so in critical applications please use software checksums to ensure message integrity at application level. Learned this very hard way.
+
 ## TODO
 
   * Write doxygen documentation for everything
